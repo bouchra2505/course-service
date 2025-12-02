@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-dev-fallback-key-plea
 DEBUG = os.environ.get('DEBUG', 'False').lower() == 'true'
 
 # Render injects the host dynamically
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['course-service-9rub.onrender.com','localhost', '127.0.0.1']
 if not DEBUG:
     # Add your Render domain, e.g., course-service-xxxx.onrender.com
     RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
